@@ -2,7 +2,11 @@ const publicVapidKey =
   "BOd2EQ8LTe3KAgMX9lWwTlHTRzv1Iantw50Mw6pUnsNr3pcxl8iglUs-YlQEQLo4UbJk9oyXs_BxgyAe0TCqKME";
 
 if ("serviceWorker" in navigator) {
-  registerServiceWorker().catch(console.log);
+
+  document.getElementById("sub-btn").onclick = function(){
+    registerServiceWorker().catch(console.log);
+  }
+  
 }
 
 async function registerServiceWorker() {
