@@ -1,1 +1,4 @@
 # webPush
+
+ - yarn
+ - yarn dev
